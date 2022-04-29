@@ -36,7 +36,7 @@ Partial Class Login
         '
         Me.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEntrar.Font = New System.Drawing.Font("Nirmala UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEntrar.Location = New System.Drawing.Point(118, 163)
+        Me.btnEntrar.Location = New System.Drawing.Point(118, 182)
         Me.btnEntrar.Name = "btnEntrar"
         Me.btnEntrar.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.btnEntrar.Size = New System.Drawing.Size(93, 30)

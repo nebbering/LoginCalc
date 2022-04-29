@@ -1,4 +1,5 @@
 ﻿Imports System.Drawing
+Imports System.Windows.Forms
 
 Public Class Login
 
@@ -11,7 +12,17 @@ Public Class Login
 
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub btnEntrar_Click(sender As Object, e As EventArgs) Handles btnEntrar.Click
+
+        If txtLogin.Text = "@nebbering97" And txtSenha.Text = "321" Then
+
+            Dim calc As Calculadora
+            calc = New Calculadora
+            calc.Show()
+
+        ElseIf MessageBox.Show("Usuário e/ou senha incorreto!") Then
+
+        End If
 
 
 
