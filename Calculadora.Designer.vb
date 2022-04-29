@@ -39,14 +39,16 @@ Partial Class Calculadora
         Me.btnMult = New System.Windows.Forms.Button()
         Me.btnDiv = New System.Windows.Forms.Button()
         Me.btnLimpar = New System.Windows.Forms.Button()
-        Me.lblResultado = New System.Windows.Forms.Label()
+        Me.txtResultado = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn7
         '
         Me.btn7.BackColor = System.Drawing.SystemColors.Control
         Me.btn7.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn7.Location = New System.Drawing.Point(40, 75)
+        Me.btn7.Location = New System.Drawing.Point(40, 56)
         Me.btn7.Name = "btn7"
         Me.btn7.Size = New System.Drawing.Size(48, 50)
         Me.btn7.TabIndex = 12
@@ -58,7 +60,7 @@ Partial Class Calculadora
         '
         Me.btn8.BackColor = System.Drawing.SystemColors.Control
         Me.btn8.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn8.Location = New System.Drawing.Point(107, 75)
+        Me.btn8.Location = New System.Drawing.Point(107, 56)
         Me.btn8.Name = "btn8"
         Me.btn8.Size = New System.Drawing.Size(48, 50)
         Me.btn8.TabIndex = 13
@@ -70,7 +72,7 @@ Partial Class Calculadora
         '
         Me.btn9.BackColor = System.Drawing.SystemColors.Control
         Me.btn9.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn9.Location = New System.Drawing.Point(174, 75)
+        Me.btn9.Location = New System.Drawing.Point(174, 56)
         Me.btn9.Name = "btn9"
         Me.btn9.Size = New System.Drawing.Size(48, 50)
         Me.btn9.TabIndex = 14
@@ -82,7 +84,7 @@ Partial Class Calculadora
         '
         Me.btn4.BackColor = System.Drawing.SystemColors.Control
         Me.btn4.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn4.Location = New System.Drawing.Point(40, 146)
+        Me.btn4.Location = New System.Drawing.Point(40, 127)
         Me.btn4.Name = "btn4"
         Me.btn4.Size = New System.Drawing.Size(48, 50)
         Me.btn4.TabIndex = 8
@@ -94,7 +96,7 @@ Partial Class Calculadora
         '
         Me.btn5.BackColor = System.Drawing.SystemColors.Control
         Me.btn5.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn5.Location = New System.Drawing.Point(107, 146)
+        Me.btn5.Location = New System.Drawing.Point(107, 127)
         Me.btn5.Name = "btn5"
         Me.btn5.Size = New System.Drawing.Size(48, 50)
         Me.btn5.TabIndex = 9
@@ -106,7 +108,7 @@ Partial Class Calculadora
         '
         Me.btn6.BackColor = System.Drawing.SystemColors.Control
         Me.btn6.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn6.Location = New System.Drawing.Point(174, 146)
+        Me.btn6.Location = New System.Drawing.Point(174, 127)
         Me.btn6.Name = "btn6"
         Me.btn6.Size = New System.Drawing.Size(48, 50)
         Me.btn6.TabIndex = 10
@@ -118,7 +120,7 @@ Partial Class Calculadora
         '
         Me.btn1.BackColor = System.Drawing.SystemColors.Control
         Me.btn1.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn1.Location = New System.Drawing.Point(40, 217)
+        Me.btn1.Location = New System.Drawing.Point(40, 198)
         Me.btn1.Name = "btn1"
         Me.btn1.Size = New System.Drawing.Size(48, 50)
         Me.btn1.TabIndex = 4
@@ -130,7 +132,7 @@ Partial Class Calculadora
         '
         Me.btn2.BackColor = System.Drawing.SystemColors.Control
         Me.btn2.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn2.Location = New System.Drawing.Point(107, 217)
+        Me.btn2.Location = New System.Drawing.Point(107, 198)
         Me.btn2.Name = "btn2"
         Me.btn2.Size = New System.Drawing.Size(48, 50)
         Me.btn2.TabIndex = 5
@@ -142,7 +144,7 @@ Partial Class Calculadora
         '
         Me.btn3.BackColor = System.Drawing.SystemColors.Control
         Me.btn3.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn3.Location = New System.Drawing.Point(174, 217)
+        Me.btn3.Location = New System.Drawing.Point(174, 198)
         Me.btn3.Name = "btn3"
         Me.btn3.Size = New System.Drawing.Size(48, 50)
         Me.btn3.TabIndex = 6
@@ -154,7 +156,7 @@ Partial Class Calculadora
         '
         Me.btn0.BackColor = System.Drawing.SystemColors.Control
         Me.btn0.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn0.Location = New System.Drawing.Point(40, 289)
+        Me.btn0.Location = New System.Drawing.Point(40, 270)
         Me.btn0.Name = "btn0"
         Me.btn0.Size = New System.Drawing.Size(48, 50)
         Me.btn0.TabIndex = 1
@@ -166,7 +168,7 @@ Partial Class Calculadora
         '
         Me.btnIgual.BackColor = System.Drawing.SystemColors.Control
         Me.btnIgual.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIgual.Location = New System.Drawing.Point(104, 289)
+        Me.btnIgual.Location = New System.Drawing.Point(104, 270)
         Me.btnIgual.Name = "btnIgual"
         Me.btnIgual.Size = New System.Drawing.Size(118, 50)
         Me.btnIgual.TabIndex = 2
@@ -178,7 +180,7 @@ Partial Class Calculadora
         '
         Me.btnSub.BackColor = System.Drawing.SystemColors.Control
         Me.btnSub.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSub.Location = New System.Drawing.Point(238, 75)
+        Me.btnSub.Location = New System.Drawing.Point(238, 56)
         Me.btnSub.Name = "btnSub"
         Me.btnSub.Size = New System.Drawing.Size(48, 50)
         Me.btnSub.TabIndex = 15
@@ -190,7 +192,7 @@ Partial Class Calculadora
         '
         Me.btnAdi.BackColor = System.Drawing.SystemColors.Control
         Me.btnAdi.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdi.Location = New System.Drawing.Point(238, 146)
+        Me.btnAdi.Location = New System.Drawing.Point(238, 127)
         Me.btnAdi.Name = "btnAdi"
         Me.btnAdi.Size = New System.Drawing.Size(48, 50)
         Me.btnAdi.TabIndex = 11
@@ -202,7 +204,7 @@ Partial Class Calculadora
         '
         Me.btnMult.BackColor = System.Drawing.SystemColors.Control
         Me.btnMult.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMult.Location = New System.Drawing.Point(238, 217)
+        Me.btnMult.Location = New System.Drawing.Point(238, 198)
         Me.btnMult.Name = "btnMult"
         Me.btnMult.Size = New System.Drawing.Size(48, 50)
         Me.btnMult.TabIndex = 7
@@ -214,7 +216,7 @@ Partial Class Calculadora
         '
         Me.btnDiv.BackColor = System.Drawing.SystemColors.Control
         Me.btnDiv.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDiv.Location = New System.Drawing.Point(238, 289)
+        Me.btnDiv.Location = New System.Drawing.Point(238, 270)
         Me.btnDiv.Name = "btnDiv"
         Me.btnDiv.Size = New System.Drawing.Size(48, 50)
         Me.btnDiv.TabIndex = 3
@@ -226,7 +228,7 @@ Partial Class Calculadora
         '
         Me.btnLimpar.BackColor = System.Drawing.SystemColors.Control
         Me.btnLimpar.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLimpar.Location = New System.Drawing.Point(40, 359)
+        Me.btnLimpar.Location = New System.Drawing.Point(40, 340)
         Me.btnLimpar.Name = "btnLimpar"
         Me.btnLimpar.Size = New System.Drawing.Size(246, 50)
         Me.btnLimpar.TabIndex = 0
@@ -234,29 +236,35 @@ Partial Class Calculadora
         Me.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         Me.btnLimpar.UseVisualStyleBackColor = False
         '
-        'lblResultado
+        'txtResultado
         '
-        Me.lblResultado.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblResultado.AutoSize = True
-        Me.lblResultado.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResultado.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblResultado.Location = New System.Drawing.Point(33, 23)
-        Me.lblResultado.Name = "lblResultado"
-        Me.lblResultado.Size = New System.Drawing.Size(262, 37)
-        Me.lblResultado.TabIndex = 16
-        Me.lblResultado.Text = "                                   "
-        Me.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.txtResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtResultado.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtResultado.Location = New System.Drawing.Point(40, 7)
+        Me.txtResultado.Name = "txtResultado"
+        Me.txtResultado.Size = New System.Drawing.Size(246, 43)
+        Me.txtResultado.TabIndex = 16
+        Me.txtResultado.Text = "0"
+        Me.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-3, -6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(328, 423)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 17
+        Me.PictureBox1.TabStop = False
         '
         'Calculadora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(321, 417)
-        Me.Controls.Add(Me.lblResultado)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ClientSize = New System.Drawing.Size(321, 397)
+        Me.Controls.Add(Me.txtResultado)
         Me.Controls.Add(Me.btnLimpar)
         Me.Controls.Add(Me.btnDiv)
         Me.Controls.Add(Me.btnMult)
@@ -273,10 +281,12 @@ Partial Class Calculadora
         Me.Controls.Add(Me.btn9)
         Me.Controls.Add(Me.btn8)
         Me.Controls.Add(Me.btn7)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Calculadora"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Calculadora"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -298,5 +308,6 @@ Partial Class Calculadora
     Friend WithEvents btnMult As Windows.Forms.Button
     Friend WithEvents btnDiv As Windows.Forms.Button
     Friend WithEvents btnLimpar As Windows.Forms.Button
-    Friend WithEvents lblResultado As Windows.Forms.Label
+    Friend WithEvents txtResultado As Windows.Forms.TextBox
+    Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
 End Class

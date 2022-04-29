@@ -20,6 +20,10 @@ Public Class Login
             calc = New Calculadora
             calc.Show()
 
+        ElseIf txtLogin.Text = "" And txtSenha.Text = "" Then
+
+            MessageBox.Show("Por favor, insira os dados de login.")
+
         ElseIf MessageBox.Show("Usuário e/ou senha incorreto!") Then
 
         End If
