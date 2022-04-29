@@ -1,6 +1,6 @@
-﻿Public Class classes
+﻿Public Class Classes
 
-    Sub main()
+    Sub Main()
 
 
 

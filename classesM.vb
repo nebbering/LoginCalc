@@ -1,6 +1,6 @@
-﻿Module classesM
+﻿Module ClassesM
 
-    Sub main()
+    Sub Main()
 
 
 
