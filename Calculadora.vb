@@ -3,6 +3,11 @@
 
     End Sub
 
+    Dim oper As String
+    Dim res As Nullable(Of Double) = Nothing
+    Dim val2 As Nullable(Of Double) = Nothing
+    Dim SeOperador As Boolean
+
     Private Sub btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
         txtResultado.Text = txtResultado.Text + "0"
     End Sub
@@ -48,7 +53,11 @@
     End Sub
 
     Private Sub btnPonto_Click(sender As Object, e As EventArgs) Handles btnPonto.Click
-        txtResultado.Text = txtResultado.Text + "."
+
+        If InStr(txtResultado.Text, ".", CompareMethod.Text) = "0" Then
+            txtResultado.Text = txtResultado.Text + "."
+        End If
+
     End Sub
 
     Private Sub btnSub_Click(sender As Object, e As EventArgs) Handles btnSub.Click
@@ -68,6 +77,34 @@
     End Sub
 
     Private Sub btnIgual_Click(sender As Object, e As EventArgs) Handles btnIgual.Click
-        txtResultado = 
+
     End Sub
+
+    Public Sub AvaliaEFazOperacao()
+        SeOperador = True
+        val2 = Val(txtResultado.Text)
+
+        If res IsNot Nothing Then
+
+            Select Case oper
+                Case "+"
+                    res = res + val2
+                Case "-"
+                    res -= val2
+                Case "*"
+                    res *= val2
+                Case "/"
+                    res /= val2
+            End Select
+            txtResultado.Text = res
+
+        Else
+            res = val2
+
+        End If
+
+
+
+    End Sub
+
 End Class
