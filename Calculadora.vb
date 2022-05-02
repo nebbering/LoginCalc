@@ -61,19 +61,23 @@
     End Sub
 
     Private Sub btnSub_Click(sender As Object, e As EventArgs) Handles btnSub.Click
-        txtResultado.Text = txtResultado.Text + "-"
+        AvaliaEFazOperacao()
+        oper = "-"
     End Sub
 
     Private Sub btnAdi_Click(sender As Object, e As EventArgs) Handles btnAdi.Click
-        txtResultado.Text = txtResultado.Text + "+"
+        AvaliaEFazOperacao()
+        oper = "+"
     End Sub
 
     Private Sub btnMult_Click(sender As Object, e As EventArgs) Handles btnMult.Click
-        txtResultado.Text = txtResultado.Text + "*"
+        AvaliaEFazOperacao()
+        oper = "*"
     End Sub
 
     Private Sub btnDiv_Click(sender As Object, e As EventArgs) Handles btnDiv.Click
-        txtResultado.Text = txtResultado.Text + "/"
+        AvaliaEFazOperacao()
+        oper = "/"
     End Sub
 
     Private Sub btnIgual_Click(sender As Object, e As EventArgs) Handles btnIgual.Click
@@ -102,8 +106,6 @@
             res = val2
 
         End If
-
-
 
     End Sub
 
