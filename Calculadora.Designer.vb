@@ -246,7 +246,6 @@ Partial Class Calculadora
         Me.txtResultado.Name = "txtResultado"
         Me.txtResultado.Size = New System.Drawing.Size(246, 43)
         Me.txtResultado.TabIndex = 16
-        Me.txtResultado.Text = "0"
         Me.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'PictureBox1
