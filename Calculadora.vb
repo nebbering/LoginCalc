@@ -8,6 +8,10 @@
     Private valor As Double
     Private Operador As Boolean = False
 
+    Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
+        txtResultado.Text = "0"
+    End Sub
+
     Private Sub btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
         Concatenar()
         txtResultado.Text = txtResultado.Text + "0"
@@ -18,9 +22,6 @@
         txtResultado.Text = txtResultado.Text + "1"
     End Sub
 
-    Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
-        txtResultado.Text = ""
-    End Sub
 
     Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
         Concatenar()
