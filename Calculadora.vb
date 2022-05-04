@@ -92,7 +92,9 @@
     End Sub
 
     Private Sub btnIgual_Click(sender As Object, e As EventArgs) Handles btnIgual.Click
-        '        txtResultado.Text = 
+        AvaliaEFazOperacao()
+        '        operacao = ""
+        '        txtResultado.Text = valor
     End Sub
 
     Public Sub AvaliaEFazOperacao()
