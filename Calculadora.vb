@@ -3,10 +3,10 @@
 
     End Sub
 
-    Dim oper As String
-    Dim res As Nullable(Of Double) = Nothing
-    Dim val2 As Nullable(Of Double) = Nothing
-    Dim SeOperador As Boolean
+    Private oper As String
+    Private res As String
+    Private val2 As Nullable(Of Double) = Nothing
+    Private SeOperador As Boolean
 
     Private Sub btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
         txtResultado.Text = txtResultado.Text + "0"
@@ -54,7 +54,7 @@
 
     Private Sub btnPonto_Click(sender As Object, e As EventArgs) Handles btnPonto.Click
 
-        If InStr(txtResultado.Text, ".", CompareMethod.Text) = "0" Then
+        If InStr(txtResultado.Text, ".") = "0" Then
             txtResultado.Text = txtResultado.Text + "."
         End If
 
@@ -85,10 +85,8 @@
     End Sub
 
     Public Sub AvaliaEFazOperacao()
-        SeOperador = True
-        val2 = Val(txtResultado.Text)
-
-        If res IsNot Nothing Then
+        If SeOperador = True Then
+            val2 = Val(txtResultado.Text)
 
             Select Case oper
                 Case "+"
