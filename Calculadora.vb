@@ -3,10 +3,10 @@
 
     End Sub
 
-    Private oper As String
-    Private res As String
-    Private val2 As Nullable(Of Double) = Nothing
-    Private SeOperador As Boolean
+    Private operacao As String
+    Private resultado As String
+    Private valor As Double
+    Private SeOperador As Boolean = False
 
     Private Sub btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
         txtResultado.Text = txtResultado.Text + "0"
@@ -54,7 +54,7 @@
 
     Private Sub btnPonto_Click(sender As Object, e As EventArgs) Handles btnPonto.Click
 
-        If InStr(txtResultado.Text, ".") = "0" Then
+        If InStr(txtResultado.Text, ".", CompareMethod.Text) = "0" Then
             txtResultado.Text = txtResultado.Text + "."
         End If
 
@@ -62,22 +62,22 @@
 
     Private Sub btnSub_Click(sender As Object, e As EventArgs) Handles btnSub.Click
         AvaliaEFazOperacao()
-        oper = "-"
+        operacao = "-"
     End Sub
 
     Private Sub btnAdi_Click(sender As Object, e As EventArgs) Handles btnAdi.Click
         AvaliaEFazOperacao()
-        oper = "+"
+        operacao = "+"
     End Sub
 
     Private Sub btnMult_Click(sender As Object, e As EventArgs) Handles btnMult.Click
         AvaliaEFazOperacao()
-        oper = "*"
+        operacao = "*"
     End Sub
 
     Private Sub btnDiv_Click(sender As Object, e As EventArgs) Handles btnDiv.Click
         AvaliaEFazOperacao()
-        oper = "/"
+        operacao = "/"
     End Sub
 
     Private Sub btnIgual_Click(sender As Object, e As EventArgs) Handles btnIgual.Click
@@ -86,22 +86,22 @@
 
     Public Sub AvaliaEFazOperacao()
         If SeOperador = True Then
-            val2 = Val(txtResultado.Text)
+            valor = txtResultado.Text
 
-            Select Case oper
+            Select Case operacao
                 Case "+"
-                    res = res + val2
+                    resultado += valor
                 Case "-"
-                    res -= val2
+                    resultado -= valor
                 Case "*"
-                    res *= val2
+                    resultado *= valor
                 Case "/"
-                    res /= val2
+                    resultado /= valor
             End Select
-            txtResultado.Text = res
+            txtResultado.Text = resultado
 
         Else
-            res = val2
+            txtResultado.Text = valor
 
         End If
 
