@@ -66,7 +66,7 @@ Partial Class Menu
         Me.lblBemVindo.BackColor = System.Drawing.Color.Transparent
         Me.lblBemVindo.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBemVindo.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lblBemVindo.Location = New System.Drawing.Point(91, 61)
+        Me.lblBemVindo.Location = New System.Drawing.Point(92, 85)
         Me.lblBemVindo.Name = "lblBemVindo"
         Me.lblBemVindo.Size = New System.Drawing.Size(155, 25)
         Me.lblBemVindo.TabIndex = 3
@@ -90,13 +90,17 @@ Partial Class Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(340, 261)
         Me.Controls.Add(Me.lblPerg)
         Me.Controls.Add(Me.lblBemVindo)
         Me.Controls.Add(Me.btnVoltar)
         Me.Controls.Add(Me.btnAcessar)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Menu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

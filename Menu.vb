@@ -11,4 +11,16 @@ Public Class Menu
         lblPerg.BackColor = Color.Transparent
 
     End Sub
+
+    Private Sub btnAcessar_Click(sender As Object, e As EventArgs) Handles btnAcessar.Click
+
+    End Sub
+
+    Private Sub btnVoltar_Click(sender As Object, e As EventArgs) Handles btnVoltar.Click
+
+        Dim volt As Login
+        volt = New Login
+        volt.Show()
+
+    End Sub
 End Class
