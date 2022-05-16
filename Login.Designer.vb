@@ -40,7 +40,7 @@ Partial Class Login
         Me.btnEntrar.Name = "btnEntrar"
         Me.btnEntrar.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.btnEntrar.Size = New System.Drawing.Size(93, 30)
-        Me.btnEntrar.TabIndex = 0
+        Me.btnEntrar.TabIndex = 3
         Me.btnEntrar.Text = "E N T R A R"
         Me.btnEntrar.UseVisualStyleBackColor = True
         '
@@ -51,7 +51,7 @@ Partial Class Login
         Me.txtLogin.Location = New System.Drawing.Point(133, 68)
         Me.txtLogin.Name = "txtLogin"
         Me.txtLogin.Size = New System.Drawing.Size(146, 25)
-        Me.txtLogin.TabIndex = 2
+        Me.txtLogin.TabIndex = 1
         Me.txtLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtSenha
@@ -62,7 +62,7 @@ Partial Class Login
         Me.txtSenha.Name = "txtSenha"
         Me.txtSenha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(56)
         Me.txtSenha.Size = New System.Drawing.Size(146, 25)
-        Me.txtSenha.TabIndex = 4
+        Me.txtSenha.TabIndex = 2
         Me.txtSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.txtSenha.UseSystemPasswordChar = True
         '
