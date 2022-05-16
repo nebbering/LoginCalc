@@ -43,7 +43,7 @@ Partial Class Menu
         'btnAcessar
         '
         Me.btnAcessar.Font = New System.Drawing.Font("Nirmala UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAcessar.Location = New System.Drawing.Point(58, 154)
+        Me.btnAcessar.Location = New System.Drawing.Point(63, 154)
         Me.btnAcessar.Name = "btnAcessar"
         Me.btnAcessar.Size = New System.Drawing.Size(88, 35)
         Me.btnAcessar.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class Menu
         'btnVoltar
         '
         Me.btnVoltar.Font = New System.Drawing.Font("Nirmala UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVoltar.Location = New System.Drawing.Point(182, 154)
+        Me.btnVoltar.Location = New System.Drawing.Point(187, 154)
         Me.btnVoltar.Name = "btnVoltar"
         Me.btnVoltar.Size = New System.Drawing.Size(88, 35)
         Me.btnVoltar.TabIndex = 2
@@ -66,7 +66,7 @@ Partial Class Menu
         Me.lblBemVindo.BackColor = System.Drawing.Color.Transparent
         Me.lblBemVindo.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBemVindo.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lblBemVindo.Location = New System.Drawing.Point(92, 85)
+        Me.lblBemVindo.Location = New System.Drawing.Point(97, 85)
         Me.lblBemVindo.Name = "lblBemVindo"
         Me.lblBemVindo.Size = New System.Drawing.Size(155, 25)
         Me.lblBemVindo.TabIndex = 3
@@ -79,7 +79,7 @@ Partial Class Menu
         Me.lblPerg.BackColor = System.Drawing.Color.Transparent
         Me.lblPerg.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPerg.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.lblPerg.Location = New System.Drawing.Point(59, 110)
+        Me.lblPerg.Location = New System.Drawing.Point(64, 110)
         Me.lblPerg.Name = "lblPerg"
         Me.lblPerg.Size = New System.Drawing.Size(211, 25)
         Me.lblPerg.TabIndex = 4

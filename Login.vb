@@ -25,7 +25,7 @@ Public Class Login
 
             MessageBox.Show("Por favor, insira os dados de login.")
 
-        ElseIf MessageBox.Show("Usuário e/ou senha incorreto!") Then
+        ElseIf MessageBox.Show("Usuário e/ou senha incorretos!") Then
 
         End If
 
