@@ -14,11 +14,11 @@ Public Class Login
 
     Private Sub btnEntrar_Click(sender As Object, e As EventArgs) Handles btnEntrar.Click
 
-        If txtLogin.Text = "@nebbering97" And txtSenha.Text = "321" Then
+        If txtLogin.Text = "asd" And txtSenha.Text = "dsa" Then
 
-            Dim calc As Calculadora
-            calc = New Calculadora
-            calc.Show()
+            Dim menu As Menu
+            menu = New Menu
+            menu.Show()
 
         ElseIf txtLogin.Text = "" And txtSenha.Text = "" Then
 
@@ -27,7 +27,6 @@ Public Class Login
         ElseIf MessageBox.Show("Usuário e/ou senha incorreto!") Then
 
         End If
-
 
 
     End Sub

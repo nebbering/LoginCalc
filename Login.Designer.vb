@@ -71,7 +71,7 @@ Partial Class Login
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(-6, -3)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(342, 271)
+        Me.PictureBox2.Size = New System.Drawing.Size(352, 271)
         Me.PictureBox2.TabIndex = 6
         Me.PictureBox2.TabStop = False
         '
