@@ -26,8 +26,8 @@ Partial Class Menu
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnAcessar = New System.Windows.Forms.Button()
         Me.btnVoltar = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblBemVindo = New System.Windows.Forms.Label()
+        Me.lblPerg = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,7 +43,7 @@ Partial Class Menu
         'btnAcessar
         '
         Me.btnAcessar.Font = New System.Drawing.Font("Nirmala UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAcessar.Location = New System.Drawing.Point(59, 162)
+        Me.btnAcessar.Location = New System.Drawing.Point(58, 154)
         Me.btnAcessar.Name = "btnAcessar"
         Me.btnAcessar.Size = New System.Drawing.Size(88, 35)
         Me.btnAcessar.TabIndex = 1
@@ -53,44 +53,46 @@ Partial Class Menu
         'btnVoltar
         '
         Me.btnVoltar.Font = New System.Drawing.Font("Nirmala UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVoltar.Location = New System.Drawing.Point(182, 162)
+        Me.btnVoltar.Location = New System.Drawing.Point(182, 154)
         Me.btnVoltar.Name = "btnVoltar"
         Me.btnVoltar.Size = New System.Drawing.Size(88, 35)
         Me.btnVoltar.TabIndex = 2
         Me.btnVoltar.Text = "VOLTAR"
         Me.btnVoltar.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lblBemVindo
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(86, 52)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(155, 25)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "BEM-VINDO(A)!"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblBemVindo.AutoSize = True
+        Me.lblBemVindo.BackColor = System.Drawing.Color.Transparent
+        Me.lblBemVindo.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBemVindo.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblBemVindo.Location = New System.Drawing.Point(91, 61)
+        Me.lblBemVindo.Name = "lblBemVindo"
+        Me.lblBemVindo.Size = New System.Drawing.Size(155, 25)
+        Me.lblBemVindo.TabIndex = 3
+        Me.lblBemVindo.Text = "BEM-VINDO(A)!"
+        Me.lblBemVindo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label2
+        'lblPerg
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(59, 122)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(211, 25)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "O QUE DESEJA FAZER?"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblPerg.AutoSize = True
+        Me.lblPerg.BackColor = System.Drawing.Color.Transparent
+        Me.lblPerg.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPerg.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.lblPerg.Location = New System.Drawing.Point(59, 110)
+        Me.lblPerg.Name = "lblPerg"
+        Me.lblPerg.Size = New System.Drawing.Size(211, 25)
+        Me.lblPerg.TabIndex = 4
+        Me.lblPerg.Text = "O QUE DESEJA FAZER?"
+        Me.lblPerg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(340, 261)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblPerg)
+        Me.Controls.Add(Me.lblBemVindo)
         Me.Controls.Add(Me.btnVoltar)
         Me.Controls.Add(Me.btnAcessar)
         Me.Controls.Add(Me.PictureBox1)
@@ -105,6 +107,6 @@ Partial Class Menu
     Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
     Friend WithEvents btnAcessar As Windows.Forms.Button
     Friend WithEvents btnVoltar As Windows.Forms.Button
-    Friend WithEvents Label1 As Windows.Forms.Label
-    Friend WithEvents Label2 As Windows.Forms.Label
+    Friend WithEvents lblBemVindo As Windows.Forms.Label
+    Friend WithEvents lblPerg As Windows.Forms.Label
 End Class

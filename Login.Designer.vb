@@ -105,7 +105,7 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.CausesValidation = False
-        Me.ClientSize = New System.Drawing.Size(331, 263)
+        Me.ClientSize = New System.Drawing.Size(339, 263)
         Me.Controls.Add(Me.lblSenha)
         Me.Controls.Add(Me.lblLogin)
         Me.Controls.Add(Me.txtSenha)

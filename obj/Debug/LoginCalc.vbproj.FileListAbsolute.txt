@@ -18,3 +18,4 @@ C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.exe
 C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.pdb
 C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.Calculadora.resources
 C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.Resources.resources
+C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.Menu.resources
