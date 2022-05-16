@@ -18,6 +18,7 @@ Public Class Login
 
             Dim menu As Menu
             menu = New Menu
+            Me.Hide()
             menu.Show()
 
         ElseIf txtLogin.Text = "" And txtSenha.Text = "" Then

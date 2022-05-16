@@ -10,10 +10,6 @@ Public Class Menu
         lblPerg.Parent = PictureBox1
         lblPerg.BackColor = Color.Transparent
 
-        Dim log As Login
-        log = New Login
-        log.Close()
-
     End Sub
 
     Private Sub btnAcessar_Click(sender As Object, e As EventArgs) Handles btnAcessar.Click
