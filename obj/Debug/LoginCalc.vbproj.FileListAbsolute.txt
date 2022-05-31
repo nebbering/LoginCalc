@@ -19,3 +19,5 @@ C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.pdb
 C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.Calculadora.resources
 C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.Resources.resources
 C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.Menu.resources
+C:\Users\ADAPTA\Desktop\LoginCalc\bin\Debug\Guna.UI2.dll
+C:\Users\ADAPTA\Desktop\LoginCalc\obj\Debug\LoginCalc.vbproj.CopyComplete

@@ -1,4 +1,6 @@
-﻿Public Class Calculadora
+﻿Imports System.Windows.Forms
+
+Public Class Calculadora
     Private Sub Calculadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -135,6 +137,17 @@
 
             txtResultado.Text = ""
 
+        End If
+    End Sub
+
+    Private Sub txtResultado_KeyPress(sender As Object, e As Windows.Forms.KeyPressEventArgs) Handles txtResultado.KeyPress
+        'Bloqueia Entrada de Letras
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = True
+        Else
+            'Bloqueia Entrada de Símbolos
+            Char.IsSymbol(e.KeyChar)
+            e.Handled = True
         End If
     End Sub
 

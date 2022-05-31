@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Calculadora
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Calculadora
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Calculadora))
         Me.btn7 = New System.Windows.Forms.Button()
@@ -33,7 +33,6 @@ Partial Class Calculadora
         Me.btn2 = New System.Windows.Forms.Button()
         Me.btn3 = New System.Windows.Forms.Button()
         Me.btn0 = New System.Windows.Forms.Button()
-        Me.btnCE = New System.Windows.Forms.Button()
         Me.btnSub = New System.Windows.Forms.Button()
         Me.btnAdi = New System.Windows.Forms.Button()
         Me.btnMult = New System.Windows.Forms.Button()
@@ -166,18 +165,6 @@ Partial Class Calculadora
         Me.btn0.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         Me.btn0.UseVisualStyleBackColor = False
         '
-        'btnCE
-        '
-        Me.btnCE.BackColor = System.Drawing.SystemColors.Control
-        Me.btnCE.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCE.Location = New System.Drawing.Point(174, 340)
-        Me.btnCE.Name = "btnCE"
-        Me.btnCE.Size = New System.Drawing.Size(112, 50)
-        Me.btnCE.TabIndex = 2
-        Me.btnCE.Text = "CE"
-        Me.btnCE.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        Me.btnCE.UseVisualStyleBackColor = False
-        '
         'btnSub
         '
         Me.btnSub.BackColor = System.Drawing.SystemColors.Control
@@ -230,9 +217,9 @@ Partial Class Calculadora
         '
         Me.btnC.BackColor = System.Drawing.SystemColors.Control
         Me.btnC.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnC.Location = New System.Drawing.Point(40, 340)
+        Me.btnC.Location = New System.Drawing.Point(174, 270)
         Me.btnC.Name = "btnC"
-        Me.btnC.Size = New System.Drawing.Size(115, 50)
+        Me.btnC.Size = New System.Drawing.Size(48, 50)
         Me.btnC.TabIndex = 0
         Me.btnC.Text = "C"
         Me.btnC.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
@@ -241,6 +228,8 @@ Partial Class Calculadora
         'txtResultado
         '
         Me.txtResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtResultado.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtResultado.Enabled = False
         Me.txtResultado.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtResultado.Location = New System.Drawing.Point(40, 7)
         Me.txtResultado.Name = "txtResultado"
@@ -273,10 +262,12 @@ Partial Class Calculadora
         'btnIgual
         '
         Me.btnIgual.BackColor = System.Drawing.SystemColors.Control
+        Me.btnIgual.FlatAppearance.BorderSize = 0
+        Me.btnIgual.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnIgual.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIgual.Location = New System.Drawing.Point(174, 270)
+        Me.btnIgual.Location = New System.Drawing.Point(40, 335)
         Me.btnIgual.Name = "btnIgual"
-        Me.btnIgual.Size = New System.Drawing.Size(48, 50)
+        Me.btnIgual.Size = New System.Drawing.Size(115, 50)
         Me.btnIgual.TabIndex = 19
         Me.btnIgual.Text = "="
         Me.btnIgual.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
@@ -297,7 +288,6 @@ Partial Class Calculadora
         Me.Controls.Add(Me.btnMult)
         Me.Controls.Add(Me.btnAdi)
         Me.Controls.Add(Me.btnSub)
-        Me.Controls.Add(Me.btnCE)
         Me.Controls.Add(Me.btn0)
         Me.Controls.Add(Me.btn3)
         Me.Controls.Add(Me.btn2)
@@ -329,7 +319,6 @@ Partial Class Calculadora
     Friend WithEvents btn2 As Windows.Forms.Button
     Friend WithEvents btn3 As Windows.Forms.Button
     Friend WithEvents btn0 As Windows.Forms.Button
-    Friend WithEvents btnCE As Windows.Forms.Button
     Friend WithEvents btnSub As Windows.Forms.Button
     Friend WithEvents btnAdi As Windows.Forms.Button
     Friend WithEvents btnMult As Windows.Forms.Button
